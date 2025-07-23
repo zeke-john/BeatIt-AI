@@ -12,4 +12,4 @@ python3 generate_prompts_lyrics.py \
   --overwrite
 ```
 
-yeezy yeezy yeezy yeezy
+yeezy yeezy yeezy young weezy dis that hulster musik
