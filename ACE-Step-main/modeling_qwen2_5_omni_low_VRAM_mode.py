@@ -2395,8 +2395,8 @@ class Qwen2_5OmniThinkerForConditionalGeneration(Qwen2_5OmniPreTrainedModelForCo
 
         >>> response = processor.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
         ```"""
-                        # self.visual.to('cuda')
-                self.audio_tower.to('cuda')
+        # self.visual.to('cuda')
+        self.audio_tower.to('cuda')
         torch.cuda.empty_cache()
 
         output_attentions = output_attentions if output_attentions is not None else self.config.output_attentions
