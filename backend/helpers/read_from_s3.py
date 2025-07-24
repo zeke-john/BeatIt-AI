@@ -1,19 +1,25 @@
-# only taking 8 to see how well the finetuning is 
-
 import boto3
 import os
 
+# --- Hardcoded AWS credentials (your personal ones) ---
+aws_access_key_id = "_"
+aws_secret_access_key = "_"
+region_name = "us-east-1"
+
 # --- Configuration ---
-profile_name = 'personal'
 bucket_name = "beatit-ai-training-data"
 prefix = "training-data/"
-search_keyword = "Drake Type Beat"
+search_keyword = "Drake type beat"
 max_files = 8
 download_dir = "./downloads"
 
 # --- Setup ---
-session = boto3.Session(profile_name=profile_name)
-s3 = session.client('s3')
+s3 = boto3.client(
+    's3',
+    aws_access_key_id=aws_access_key_id,
+    aws_secret_access_key=aws_secret_access_key,
+    region_name=region_name
+)
 
 # Create download directory if not exists
 os.makedirs(download_dir, exist_ok=True)
