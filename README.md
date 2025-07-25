@@ -30,7 +30,10 @@ For test training via run pod
 
 !python3 -m pip install boto3
 
-change the keys
+———————————
+CHANGE THE KEYS
+———————————
+
 !python3 read_from_s3.py
 
 %cd ..
@@ -38,10 +41,10 @@ change the keys
 %cd ..
 %ls
 
-!cd BeatIt-AI/ACE-Step-main 
+%cd BeatIt-AI/ACE-Step-main 
+!ls
 !python3 -m pip install -r requirements.txt
 
 !pip uninstall transformers -y && pip install git+https://github.com/huggingface/transformers.git
 
-!python3 generate_prompts_lyrics.py --data_dir /Users/zekejohn/Documents/Github/BeatIt-AI/backend/helpers/downloads --gemini_api_key "GEMINI_API_KEY_HERE” --lyrics --overwrite
-
+!python3 generate_prompts_lyrics.py --data_dir /workspace/BeatIt-AI/backend/helpers/downloads --gemini_api_key “GEMINI_KEY” --lyrics --overwrite
