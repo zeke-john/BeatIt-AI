@@ -29,6 +29,8 @@ For test training via run pod
 %cd BeatIt-AI/backend/helpers
 
 !python3 -m pip install boto3
+
+change the keys
 !python3 read_from_s3.py
 
 %cd ..
