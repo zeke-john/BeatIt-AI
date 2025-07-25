@@ -36,7 +36,7 @@ For test training via run pod
 %cd ..
 %ls
 
-!cd ACE-Step-main
+!cd BeatIt-AI/ACE-Step-main 
 !python3 -m pip install -r requirements.txt
 
 !pip uninstall transformers -y && pip install git+https://github.com/huggingface/transformers.git
