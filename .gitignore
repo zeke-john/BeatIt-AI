@@ -179,8 +179,7 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
-/backend/data
-/ACE-Step
+
 /backend/data/artists
 /backend/data/training_data
-/backend/data
+backend/data/formatted_training_data_small
