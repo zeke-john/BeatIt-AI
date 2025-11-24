@@ -1,5 +1,7 @@
 # BeatIt-AI
 
+todo - making it pub so i can easly clone from the vm, make it back to private when u done tho
+
 ai beats using new models
 
 young weezy dis that hulster musik
